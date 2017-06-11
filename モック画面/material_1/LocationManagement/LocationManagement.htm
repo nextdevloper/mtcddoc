@@ -1,0 +1,876 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<title>マテリアルコックピット</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link href="../stylesheets/stylet.css" rel="stylesheet" type="text/css">
+<link href="../stylesheets/superTables.css" rel="Stylesheet" type="text/css" />
+</head>
+<body>
+<!-- #page ページの整形：中央寄せとか -->
+<div id="page">
+	<!-- #headerer 画面上部のヘッド部分 -->
+	<div id="header">
+		<div id="header_title">マテリアルコックピット
+<!-- <img src="./img/title.gif" width="240" height="35" alt="マテリアルコックピット>--> </div>
+		<div id="headerinfo">山田　太郎<br>450000pt</div>
+		<div id="headerimg"></div>
+
+	</div>
+
+	<!-- #menu トップメニュー -->
+	<div id="menu">
+		<ul class="menu_f01">
+			<li><a href="../index.htm">Home</a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="../login.htm">ログアウト</a></li>
+		</ul>
+	</div>
+	<div id="contents">
+		<div id="menuL">
+			<!-- #menuL 左サイドメニュー -->
+			<div class="subinfo">
+				<p class="image"></p>
+			</div>
+			<div class="subinfo">
+				<p class="label">メニュー</p>
+				<ul>
+					<li><a href="../index.htm">お知らせ/タイムライン（STEP1）</a></li>
+					<li><a href="../AccountSearch/AccountSearch.htm">アカウント/組織照会（STEP1）</a></li>
+					<li><a href="../AccountManagement/AccountManagement.htm">アカウント管理（STEP1）</a></li>
+					<li><a href="../AccountManagement/StructureManagement.htm">組織管理（STEP1）</a></li>
+					<li><a href="../PointExchange/PointExchange.htm">取引管理（STEP1）</a></li>
+					<li><a href="../LocationManagement/LocationManagement.htm">ロケーション/ボックス管理（STEP1）-修正中</a></li>
+					<li><a href="../MaterialManagement/MaterialManagement.htm">マテリアル管理（STEP1）-修正中</a></li>
+					<li><a href="../MaterialCockpit/MaterialCockpit.htm">マテリアルコックピット（STEP1）-修正中</a></li>
+				</ul>
+			</div>
+			<div class="menuInfo">
+				<p class="label">結果報告</p>
+				<div id="newsbox">
+					<dl>
+						<dt>2008/06/13</dt>
+						<dd class="link"><a href="./news/080529.htm">XXの決済が終了しました。</a></dd>
+						<dd class="link"><a href="./news/080529.htm">入金が完了しました。</a></dd>
+						<dd class="link"><a href="./news/080529.htm">新規でロケーションを登録しました。</a></dd>
+					</dl>
+					<ul class="toInfo">
+						<li><a href="./news/index.htm">過去の結果報告</a></li>
+					</ul>
+				</div>
+				<p class="label">運営からのお知らせ</p>
+				<p></p>
+				<div id="newsbox">
+					<dl>
+						<dt>2008/06/13</dt>
+						<dd class="link"><a href="./news/080529.htm">サーバメンテナンスのお知らせ。</a></dd>
+						<dd class="link"><a href="./news/080529.htm">サーバメンテナンスのお知らせ。</a></dd>
+						<dd class="link"><a href="./news/080529.htm">サーバメンテナンスのお知らせ。</a></dd>
+					</dl>
+					<ul class="toInfo">
+						<li><a href="./news/index.htm">過去のお知らせ</a></li>
+					</ul>
+				</div>
+<!--				<div class="banner"><img src="img/btn_toiawase.png" alt="お問い合わせ" width="220" height="50"></div>
+				<div class="banner"><img src="img/btn_map.png" alt="アクセスマップ" width="220" height="50"></div>
+				<p>▲問い合わせ・アクセスマップ画像。新しく画像を作る場合は、imgフォルダ内のbtn_base_画像をご利用ください。</p>
+-->
+			</div>
+		</div>
+		<!-- #main 本文スペース -->
+		<div id="main">
+			<div id="breadNavi"> <a href="index.htm">HOME</a>　&gt;&gt;　<a href="index.htm">お知らせ 一覧</a>　&gt;&gt;　現在のページ </div>
+			<h1>ロケーション管理</h1>
+			<table class="table">
+				<tr>
+					<td class="tb">
+						ロケーション/ボックス
+					</td>
+					<td>
+						<input type="text" />ロケーション
+						<br><input type="text" />ボックス
+						<input type="submit" value="照会"  onclick="" />
+						<!--
+							<br>
+							<input type="radio" name="material" value="ロケーション" checked ><font size="1">ロケーション</font></input>
+							<input type="radio" name="material" value="ボックス" ><font size="1">ボックス</font></input>
+						-->
+					</td>
+				</tr>
+			</table>
+			<div class="contentswrap">
+				<div id="id1">
+					<h2>ロケーション管理</h2>
+					<div class="fakelist" align="left">
+						<a href="#" onclick="document.getElementById('L1').style.display = 'none'; document.getElementById('L2').style.display = 'block';">新規追加</a>
+						&nbsp;<a href="#">ロケーション削除</a>
+					</div>
+					<div class="fakeContainer">
+						<table id="demoTable">
+							<tr>
+								<th><input type="checkbox"></th>
+								<th>ロケーション名</th>
+								<th>ステータス</th>
+								<th>住所</th>
+								<th>備考</th>
+								<th>追加タグA</th>
+								<th>追加タグB</th>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>
+									<a href="#" onclick="document.getElementById('L1').style.display = 'block';
+														 document.getElementById('L2').style.display = 'none';
+															document.getElementById('id1').style.display = 'block';
+															document.getElementById('id2').style.display = 'none';
+															document.getElementById('id3').style.display = 'none';
+															document.getElementById('id4').style.display = 'none';
+														">赤坂倉庫A</a>
+									<br><a href="#" onclick="document.getElementById('id1').style.display = 'none';
+															document.getElementById('id2').style.display = 'block';
+															document.getElementById('id3').style.display = 'none';
+															document.getElementById('id4').style.display = 'none';
+															">（ボックス設定）</a>
+								</td>
+								<td>パブリック</td>
+								<td>〒123-4567<br>東京都港区赤坂1-2-3<br>赤坂タワー２Ｆ</td>
+								<td>本のみ</td>
+								<td>追加タグAの内容</td>
+								<td>追加タグBの内容</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>
+									<a href="#" onclick="document.getElementById('L1').style.display = 'block';
+														 document.getElementById('L2').style.display = 'none';
+															document.getElementById('id1').style.display = 'block';
+															document.getElementById('id2').style.display = 'none';
+															document.getElementById('id3').style.display = 'none';
+															document.getElementById('id4').style.display = 'none';
+														">赤坂倉庫B</a>
+									<br><a href="#" onclick="document.getElementById('id1').style.display = 'none';
+															document.getElementById('id2').style.display = 'block';
+															document.getElementById('id3').style.display = 'none';
+															document.getElementById('id4').style.display = 'none';
+															">（ボックス設定）</a>
+								</td>
+								<td>パブリック</td>
+								<td>〒123-4567<br>東京都港区赤坂1-2-3<br>赤坂タワー２Ｆ</td>
+								<td>本のみ</td>
+								<td>追加タグAの内容</td>
+								<td>追加タグBの内容</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>
+									<a href="#" onclick="document.getElementById('L1').style.display = 'block';
+														 document.getElementById('L2').style.display = 'none';
+															document.getElementById('id1').style.display = 'block';
+															document.getElementById('id2').style.display = 'none';
+															document.getElementById('id3').style.display = 'none';
+															document.getElementById('id4').style.display = 'none';
+														">自宅A</a>
+									<br><a href="#" onclick="document.getElementById('id1').style.display = 'none';
+															document.getElementById('id2').style.display = 'block';
+															document.getElementById('id3').style.display = 'none';
+															document.getElementById('id4').style.display = 'none';
+															">（ボックス設定）</a>
+								</td>
+								<td>プライベート</td>
+								<td>〒123-4567<br>東京都港区赤坂1-2-3<br>赤坂タワー３Ｆ</td>
+								<td>本のみ</td>
+								<td>追加タグAの内容</td>
+								<td>追加タグBの内容</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>
+									<a href="#" onclick="document.getElementById('L1').style.display = 'block';
+														 document.getElementById('L2').style.display = 'none';
+															document.getElementById('id1').style.display = 'block';
+															document.getElementById('id2').style.display = 'none';
+															document.getElementById('id3').style.display = 'none';
+															document.getElementById('id4').style.display = 'none';
+														">自宅A</a>
+									<br><a href="#" onclick="document.getElementById('id1').style.display = 'none';
+															document.getElementById('id2').style.display = 'block';
+															document.getElementById('id3').style.display = 'none';
+															document.getElementById('id4').style.display = 'none';
+															">（ボックス設定）</a>
+								</td>
+								<td>プライベート</td>
+								<td>〒123-4567<br>東京都港区赤坂1-2-3<br>赤坂タワー３Ｆ</td>
+								<td>本のみ</td>
+								<td>追加タグAの内容</td>
+								<td>追加タグBの内容</td>
+							</tr>
+						</table>
+					</div>
+					<div id="L1" style="display:none;">
+						<h2>ロケーション詳細</h2>
+						<div class="fakelist" align="left">
+							<a href="#" onclick="document.getElementById('L1').style.display = 'none'; document.getElementById('L2').style.display = 'block';">ロケーション編集</a>
+						</div>
+						<table class="table">
+							<tr>
+								<td class="tb">ロケーション情報：Akasaka_A</td>
+								<td>赤坂倉庫A<br>（公開）</td>
+							</tr>
+							<tr>
+								<td class="tb">住所</td>
+								<td>〒123-4567<br>東京都港区赤坂1-2-3<br>赤坂タワー３Ｆ</td>
+							</tr>
+							<tr>
+								<td class="tb">備考</td>
+								<td>本のみ</td>
+							</tr>
+							<tr>
+								<td class="tb">追加タグA</td>
+								<td>追加タグAの内容</td>
+							</tr>
+							<tr>
+								<td class="tb">追加タグB</td>
+								<td>追加タグBの内容</td>
+							</tr>
+						</table>
+					</div>
+					<div id="L2" style="display:none;">
+						<h2>ロケーション登録変更</h2>
+						<div class="fakelist" align="left">
+							<a href="#" onclick="document.getElementById('L1').style.display = 'block'; document.getElementById('L2').style.display = 'none';">ロケーション編集</a>
+						</div>
+						<table class="table">
+							<tr>
+								<td class="tb">ロケーショングループID</td>
+								<td>
+									<input type="text" />
+									<input type="checkbox" /><font size="1" color="blue">公開</font>
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">ロケーションID</td>
+								<td>
+									<input type="text" />
+									<input type="checkbox" /><font size="1" color="blue">公開</font>
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">ロケーション名</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">住所（郵便番号）</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">住所（住所）</td>
+								<td>
+									<input type="text" /><br>
+									<input type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">住所（送付先名）</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">住所（電話番号）</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">備考</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">追加タグA</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">追加タグB</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="id2" >
+					<h2>ボックス管理</h2>
+<!--
+					ロケーション名：
+					<a href="#"  onclick="document.getElementById('id1').style.display = 'block';document.getElementById('id2').style.display = 'none';">
+						赤坂倉庫（ID:CCCCCCCC1/公開）
+					</a>
+-->
+					<div class="fakelist" align="left">
+						<a href="#" onclick="document.getElementById('B1').style.display = 'none'; document.getElementById('B2').style.display = 'block';">新規追加</a>
+						&nbsp;<a href="#">ボックス削除</a>
+					</div>
+					<div class="fakeContainer">
+						<table id="demoTable2">
+							<tr>
+								<th><input type="checkbox"></th>
+								<th>ロケーション名</th>
+								<th>ボックス名</th>
+								<th>ステータス</th>
+								<th>サイズ</th>
+								<th>備考</th>
+								<th>
+									条件指定
+								</th>
+								<th>追加タグA</th>
+								<th>追加タグB</th>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>赤坂倉庫<br>（ID:C1/公開）</td>
+								<td><a href="#" onclick="document.getElementById('B1').style.display = 'block'; document.getElementById('B2').style.display = 'none';">ボックスA-1</a></td>
+								<td>公開/未使用</td>
+								<td>サイズA</td>
+								<td>文庫本×10格納可能</td>
+								<td>
+									<a href="#" 
+									 onclick="document.getElementById('id1').style.display = 'none';
+									 document.getElementById('id2').style.display = 'none';
+									 document.getElementById('id3').style.display = 'block';
+									 document.getElementById('id4').style.display = 'none';
+									 document.getElementById('RT1').style.display = 'block';
+									 document.getElementById('RT2').style.display = 'none';
+									 ">提供条件指定</a>
+									<br>
+									<a href="#" 
+									 onclick="document.getElementById('id1').style.display = 'none';
+									 document.getElementById('id2').style.display = 'none';
+									 document.getElementById('id3').style.display = 'none';
+									 document.getElementById('id4').style.display = 'block';
+									 ">移動条件指定</a>
+								</td>
+								<td>追加タグAの内容</td>
+								<td>追加タグBの内容</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>赤坂倉庫<br>（ID:C1/公開）</td>
+								<td><a href="#" onclick="document.getElementById('B1').style.display = 'block'; document.getElementById('B2').style.display = 'none';">ボックスA-2</a></td>
+								<td>公開/使用中（空き有）</td>
+								<td>サイズA</td>
+								<td>文庫本×10格納可能</td>
+								<td>
+									<a href="#" 
+									 onclick="document.getElementById('id1').style.display = 'none';
+									 document.getElementById('id2').style.display = 'none';
+									 document.getElementById('id3').style.display = 'block';
+									 document.getElementById('id4').style.display = 'none';
+									 document.getElementById('RT1').style.display = 'block';
+									 document.getElementById('RT2').style.display = 'none';
+									 ">提供条件指定</a>
+									<br>
+									<a href="#" 
+									 onclick="document.getElementById('id1').style.display = 'none';
+									 document.getElementById('id2').style.display = 'none';
+									 document.getElementById('id3').style.display = 'none';
+									 document.getElementById('id4').style.display = 'block';
+									 ">移動条件指定</a>
+								</td>
+								<td>追加タグAの内容</td>
+								<td>追加タグBの内容</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>赤坂倉庫<br>（ID:C1/公開）</td>
+								<td><a href="#" onclick="document.getElementById('B1').style.display = 'block'; document.getElementById('B2').style.display = 'none';">ボックスA-3</a></td>
+								<td>公開/使用中（空き有）</td>
+								<td>サイズA</td>
+								<td>文庫本×10格納可能</td>
+								<td>
+									<a href="#" 
+									 onclick="document.getElementById('id1').style.display = 'none';
+									 document.getElementById('id2').style.display = 'none';
+									 document.getElementById('id3').style.display = 'block';
+									 document.getElementById('id4').style.display = 'none';
+									 document.getElementById('RT1').style.display = 'block';
+									 document.getElementById('RT2').style.display = 'none';
+									 ">提供条件指定</a>
+									<br>
+									<a href="#" 
+									 onclick="document.getElementById('id1').style.display = 'none';
+									 document.getElementById('id2').style.display = 'none';
+									 document.getElementById('id3').style.display = 'none';
+									 document.getElementById('id4').style.display = 'block';
+									 ">移動条件指定</a>
+								</td>
+								<td>追加タグAの内容</td>
+								<td>追加タグBの内容</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>赤坂倉庫<br>（ID:C1/公開）</td>
+								<td><a href="#" onclick="document.getElementById('B1').style.display = 'block'; document.getElementById('B2').style.display = 'none';">ボックスA-4</a></td>
+								<td>公開/使用中（空き有）</td>
+								<td>サイズA</td>
+								<td>文庫本×10格納可能</td>
+								<td>
+									<a href="#" 
+									 onclick="document.getElementById('id1').style.display = 'none';
+									 document.getElementById('id2').style.display = 'none';
+									 document.getElementById('id3').style.display = 'block';
+									 document.getElementById('id4').style.display = 'none';
+									 document.getElementById('RT1').style.display = 'block';
+									 document.getElementById('RT2').style.display = 'none';
+									 ">提供条件指定</a>
+									<br>
+									<a href="#" 
+									 onclick="document.getElementById('id1').style.display = 'none';
+									 document.getElementById('id2').style.display = 'none';
+									 document.getElementById('id3').style.display = 'none';
+									 document.getElementById('id4').style.display = 'block';
+									 ">移動条件指定</a>
+								</td>
+								<td>追加タグAの内容</td>
+								<td>追加タグBの内容</td>
+							</tr>
+						</table>
+					</div>
+					<div id="B1" style="display:none;">
+						<h2>ボックス詳細</h2>
+						ロケーション名：赤坂倉庫（ID:CCCCCCCC1/公開）
+						<div class="fakelist" align="left">
+							<a href="#" onclick="document.getElementById('B1').style.display = 'none'; document.getElementById('B2').style.display = 'block';">ボックス編集</a>
+						</div>
+						<table class="table">
+							<tr>
+								<td class="tb">ボックス情報：Akasaka_A</td>
+								<td>ボックスA-1<br>（公開/未使用）</td>
+							</tr>
+							<tr>
+								<td class="tb">容量種別</td>
+								<td>容量種別</td>
+							</tr>
+							<tr>
+								<td class="tb">備考</td>
+								<td>文庫本×10格納可能</td>
+							</tr>
+							<tr>
+								<td class="tb">追加タグA</td>
+								<td>追加タグAの内容</td>
+							</tr>
+							<tr>
+								<td class="tb">追加タグB</td>
+								<td>追加タグBの内容</td>
+							</tr>
+						</table>
+					</div>
+					<div id="B2" style="display:none;">
+						<h2>ボックス登録変更</h2>
+						<div class="fakelist" align="left">
+							<a href="#" onclick="document.getElementById('B1').style.display = 'block'; document.getElementById('B2').style.display = 'none';">ボックス登録変更</a>
+						</div>
+						<table class="table">
+							<tr>
+								<td class="tb">ボックスオーナーID</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">ボックスID</td>
+								<td>
+									<input type="text" />
+									<input type="checkbox" /><font size="1" color="blue">公開</font>
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">ボックス名</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">容量種別</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">備考</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">追加タグA</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">追加タグB</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="id3">
+					<h2>契約条件（ロケーション提供）</h2>
+					ロケーション名：
+					<a href="#" 
+					 onclick="document.getElementById('id1').style.display = 'block';
+					 document.getElementById('id2').style.display = 'none';
+					 document.getElementById('id3').style.display = 'none';
+					 document.getElementById('id4').style.display = 'none';
+					 ">赤坂倉庫（ID:CCCCCCCC1/公開）</a>
+					<br>
+					ボックス名：
+					<a href="#" 
+					 onclick="document.getElementById('id1').style.display = 'none';
+					 document.getElementById('id2').style.display = 'block';
+					 document.getElementById('id3').style.display = 'none';
+					 document.getElementById('id4').style.display = 'none';
+					 ">ボックスＳ（ID:CCCCCCCC1/公開）</a>
+					<div class="fakelist" align="left">
+						<a href="#" 
+									 onclick="
+									 document.getElementById('RT1').style.display = 'block';
+									 document.getElementById('RT2').style.display = 'none';
+									 document.getElementById('id1').style.display = 'none';
+									 document.getElementById('id2').style.display = 'none';
+									 document.getElementById('id3').style.display = 'block';
+									 document.getElementById('id4').style.display = 'none';
+						 ">新規追加</a>
+						&nbsp;<a href="#">削除</a>
+					</div>
+					<div class="fakeContainer">
+						<table id="demoTable3">
+							<tr>
+								<th><input type="checkbox"></th>
+								<th>契約条件（ロケーション提供）条件名<br></th>
+								<th>ステータス</th>
+								<th>
+									場所提供料
+									<br>（初回/日額）
+								</th>
+								<th>
+									保証料
+									<br>（提供側/利用側）
+								</th>
+								<th>
+									格納可能数
+								</th>
+								<th>備考</th>
+								<th>追加タグA</th>
+								<th>追加タグB</th>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td><a href="#" 
+									 document.getElementById('RT1').style.display = 'block';
+									 document.getElementById('RT2').style.display = 'none';
+									 ">文庫本（Aサイズ）</a></td>
+								<td>1年単位<br>/延長有（自動延長）</td>
+								<td>CP:10pt<br>CP:10pt/日</td>
+								<td>CP:100pt<br>CP:100pt</td>
+								<td>10個</td>
+								<td>10個格納可能です</td>
+								<td>追加タグAの内容</td>
+								<td>追加タグBの内容</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td><a href="#" >文庫本（Bサイズ）</a></td>
+								<td>1年単位<br>/延長有（自動延長）</td>
+								<td>CP:10pt<br>CP:10pt/日</td>
+								<td>CP:100pt<br>CP:100pt</td>
+								<td>10個</td>
+								<td>10個格納可能です</td>
+								<td>追加タグAの内容</td>
+								<td>追加タグBの内容</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td><a href="#">文庫本（Cサイズ）</a></td>
+								<td>1年単位<br>/延長有（自動延長）</td>
+								<td>CP:10pt<br>CP:10pt/日</td>
+								<td>CP:100pt<br>CP:100pt</td>
+								<td>10個</td>
+								<td>10個格納可能です</td>
+								<td>追加タグAの内容</td>
+								<td>追加タグBの内容</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td><a href="#">文庫本（Dサイズ）</a></td>
+								<td>1年単位<br>/延長有（自動延長）</td>
+								<td>CP:10pt<br>CP:10pt/日</td>
+								<td>CP:100pt<br>CP:100pt</td>
+								<td>10個</td>
+								<td>10個格納可能です</td>
+								<td>追加タグAの内容</td>
+								<td>追加タグBの内容</td>
+							</tr>
+						</table>
+					</div>
+					<div id="TR1">
+						<h2>契約条件（ロケーション提供）条件詳細</h2>
+						ロケーション名：赤坂倉庫（ID:CCCCCCCC1/公開）
+						<br>ボックス名：ボックスＳ（ID:CCCCCCCC1/公開）
+						<div class="fakelist" align="left">
+							<a href="#" onclick="document.getElementById('TR1').style.display = 'none'; document.getElementById('TR2').style.display = 'block';">提供条件編集</a>
+						</div>
+						<table class="table">
+							<tr>
+								<td class="tb">提供条件名<br>（マテリアルグループ名）</td>
+								<td>文庫本（Aサイズ）</td>
+							</tr>
+							<tr>
+								<td class="tb">ステータス</td>
+								<td>1年単位/延長有（自動延長）</td>
+							</tr>
+							<tr>
+								<td class="tb">場所提供料（初回/日額）</td>
+								<td>CP:10pt<br>CP:10pt/日</td>
+							</tr>
+							<tr>
+								<td class="tb">保証料（提供側/利用側）</td>
+								<td>CP:100pt<br>CP:100pt</td>
+							</tr>
+							<tr>
+								<td class="tb">格納可能数</td>
+								<td>10個</td>
+							</tr>
+							<tr>
+								<td class="tb">備考</td>
+								<td>10個格納可能です</td>
+							</tr>
+							<tr>
+								<td class="tb">追加タグA</td>
+								<td>追加タグAの内容</td>
+							</tr>
+							<tr>
+								<td class="tb">追加タグB</td>
+								<td>追加タグBの内容</td>
+							</tr>
+						</table>
+					</div>
+					<div id="TR2">
+						<h2>契約条件（ロケーション提供）登録変更</h2>
+						ロケーション名：赤坂倉庫（ID:CCCCCCCC1/公開）
+						<br>ボックス名：ボックスＳ（ID:CCCCCCCC1/公開）
+						<div class="fakelist" align="left">
+							<a href="#" onclick="document.getElementById('TR1').style.display = 'block'; document.getElementById('TR2').style.display = 'none';">提供条件登録変更</a>
+						</div>
+						<table class="table">
+							<tr>
+								<td class="tb">提供条件オーナーID</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">提供条件ID</td>
+								<td>
+									<input type="text" />
+									<input type="checkbox" /><font size="1" color="blue">公開</font>
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">提供条件名</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">容量種別</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">預かり期間</td>
+								<td>1年単位/延長有（自動延長）</td>
+							</tr>
+							<tr>
+								<td class="tb">場所提供料（初回/日額）</td>
+								<td>CP:10pt<br>CP:10pt/日</td>
+							</tr>
+							<tr>
+								<td class="tb">保証料（提供側/利用側）</td>
+								<td>CP:100pt<br>CP:100pt</td>
+							</tr>
+							<tr>
+								<td class="tb">格納可能数</td>
+								<td>10個</td>
+							</tr>
+							<tr>
+								<td class="tb">備考</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">追加タグA</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td class="tb">追加タグB</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="id4">
+					<h2>契約条件（ロケーション間移動）</h2>
+					<a href="#" 
+					 onclick="document.getElementById('id1').style.display = 'block';
+					 document.getElementById('id2').style.display = 'none';
+					 document.getElementById('id3').style.display = 'none';
+					 document.getElementById('id4').style.display = 'none';
+					 ">ロケーション名</a>：赤坂倉庫（ID:CCCCCCCC1/公開）
+					<br>
+					<a href="#" 
+					 onclick="document.getElementById('id1').style.display = 'none';
+					 document.getElementById('id2').style.display = 'block';
+					 document.getElementById('id3').style.display = 'none';
+					 document.getElementById('id4').style.display = 'none';
+					 ">ボックス名</a>：指定なし
+					<div class="fakelist" align="left">
+						<a href="#">新規追加</a>
+						&nbsp;<a href="#">削除</a>
+						&nbsp;<a href="#">タグ追加</a>
+						&nbsp;<a href="#">グループ管理<font size="1">（グループの作成/参加/脱退をします）</font></a>
+					</div>
+					<div class="fakeContainer">
+						<table id="demoTable4">
+							<tr>
+								<th><input type="checkbox"></th>
+								<th>移動先ロケーション</th>
+								<th>移動条件名</th>
+								<th>
+									移動料
+								</th>
+								<th>備考</th>
+								<th>追加タグA</th>
+								<th>追加タグB</th>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td><a href="#">関東地方</a></td>
+								<td><a href="#">関東地方ロケーション移動料金（XX運送/50×50×10）</a></td>
+								<td>CP:300pt</td>
+								<td></td>
+								<td>追加タグAの内容</td>
+								<td>追加タグBの内容</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td><a href="#">関東地方</a></td>
+								<td><a href="#">関東地方ロケーション移動料金（XX運送/50×50×10）</a></td>
+								<td>CP:300pt</td>
+								<td></td>
+								<td>追加タグAの内容</td>
+								<td>追加タグBの内容</td>
+							</tr>
+						</table>
+					</div>
+					<h2>契約条件（ロケーション間移動）詳細</h2>
+					ロケーション名：赤坂倉庫（ID:CCCCCCCC1/公開）
+					ボックス名：（指定なし）
+					<div class="fakelist" align="left">
+						<a href="#">移動条件編集</a>
+					</div>
+					<table class="table">
+						<tr>
+							<td class="tb">移動先ロケーション</td>
+							<td>関東地方</td>
+						</tr>
+						<tr>
+							<td class="tb">移動条件名</td>
+							<td>関東地方ロケーション移動料金（XX運送/50×50×10）</td>
+						</tr>
+						<tr>
+							<td class="tb">移動料</td>
+							<td>CP:300pt</td>
+						</tr>
+						<tr>
+							<td class="tb">備考</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="tb">追加タグA</td>
+							<td>追加タグAの内容</td>
+						</tr>
+						<tr>
+							<td class="tb">追加タグB</td>
+							<td>追加タグBの内容</td>
+						</tr>
+					</table>
+				</div>
+				<div id="subnavi"> </div>
+			</div>
+		</div>
+		<hr>
+
+	</div>
+	<!-- #footer　フッタースペース -->
+	<div id="footer">
+		<p>Copyright (c) 20XX yourname</p>
+	</div>
+	<div id="templatelink"> HTML &amp; CSS template by <a href="http://www.shoshinsha.com/hp/template/">CSSデザインテンプレート</a> </div>
+
+</div>
+
+
+
+<div id="testDiv" style="display:none;float:left;margin:40px;width:400px;height:300px;background-color:#f1f1f1;"></div>
+
+<script type="text/javascript" src="../javascripts/superTables.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+
+(function () {
+    new superTable("demoTable", {
+    	cssSkin : "sSky",
+        fixedCols : 2
+    });
+    new superTable("demoTable2", {
+    	cssSkin : "sSky",
+        fixedCols : 3
+    });
+    new superTable("demoTable3", {
+    	cssSkin : "sSky",
+        fixedCols : 2
+    });
+    new superTable("demoTable4", {
+    	cssSkin : "sSky",
+        fixedCols : 2
+    });
+})();
+
+//]]>
+</script>
+</body>
+</html>

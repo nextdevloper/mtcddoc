@@ -1,0 +1,358 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<title>マテリアルコックピット</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link href="../stylesheets/stylet.css" rel="stylesheet" type="text/css">
+<link href="../stylesheets/superTables.css" rel="Stylesheet" type="text/css" />
+</head>
+<body onload="document.getElementById('id1').style.display = 'none';
+              document.getElementById('id2').style.display = 'block';
+              document.getElementById('id3').style.display = 'none';
+" >
+<!-- #page ページの整形：中央寄せとか -->
+<div id="page">
+	<!-- #headerer 画面上部のヘッド部分 -->
+	<div id="header">
+		<div id="header_title">マテリアルコックピット
+<!-- <img src="./img/title.gif" width="240" height="35" alt="マテリアルコックピット>--> </div>
+		<div id="headerinfo">山田　太郎<br>450000pt</div>
+		<div id="headerimg"></div>
+
+	</div>
+
+	<!-- #menu トップメニュー -->
+	<div id="menu">
+		<ul class="menu_f01">
+			<li><a href="../index.htm">Home</a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="../login.htm">ログアウト</a></li>
+		</ul>
+	</div>
+	<div id="contents">
+		<div id="menuL">
+			<!-- #menuL 左サイドメニュー -->
+			<div class="subinfo">
+				<p class="image"></p>
+			</div>
+			<div class="subinfo">
+				<p class="label">メニュー</p>
+				<ul>
+					<li><a href="../index.htm">お知らせ/タイムライン（STEP1）</a></li>
+					<li><a href="../AccountSearch/AccountSearch.htm">アカウント/組織照会（STEP1）</a></li>
+					<li><a href="../AccountManagement/AccountManagement.htm">アカウント管理（STEP1）</a></li>
+					<li><a href="../AccountManagement/StructureManagement.htm">組織管理（STEP1）</a></li>
+					<li><a href="../PointExchange/PointExchange.htm">取引管理（STEP1）</a></li>
+					<li><a href="../LocationManagement/LocationManagement.htm">ロケーション/ボックス管理（STEP1）-修正中</a></li>
+					<li><a href="../MaterialManagement/MaterialManagement.htm">マテリアル管理（STEP1）-修正中</a></li>
+					<li><a href="../MaterialCockpit/MaterialCockpit.htm">マテリアルコックピット（STEP1）-修正中</a></li>
+				</ul>
+			</div>
+			<div class="menuInfo">
+				<p class="label">結果報告</p>
+				<div id="newsbox">
+					<dl>
+						<dt>2008/06/13</dt>
+						<dd class="link"><a href="./news/080529.htm">XXの決済が終了しました。</a></dd>
+						<dd class="link"><a href="./news/080529.htm">入金が完了しました。</a></dd>
+						<dd class="link"><a href="./news/080529.htm">新規でロケーションを登録しました。</a></dd>
+					</dl>
+					<ul class="toInfo">
+						<li><a href="./news/index.htm">過去の結果報告</a></li>
+					</ul>
+				</div>
+				<p class="label">運営からのお知らせ</p>
+				<p></p>
+				<div id="newsbox">
+					<dl>
+						<dt>2008/06/13</dt>
+						<dd class="link"><a href="./news/080529.htm">サーバメンテナンスのお知らせ。</a></dd>
+						<dd class="link"><a href="./news/080529.htm">サーバメンテナンスのお知らせ。</a></dd>
+						<dd class="link"><a href="./news/080529.htm">サーバメンテナンスのお知らせ。</a></dd>
+					</dl>
+					<ul class="toInfo">
+						<li><a href="./news/index.htm">過去のお知らせ</a></li>
+					</ul>
+				</div>
+<!--				<div class="banner"><img src="img/btn_toiawase.png" alt="お問い合わせ" width="220" height="50"></div>
+				<div class="banner"><img src="img/btn_map.png" alt="アクセスマップ" width="220" height="50"></div>
+				<p>▲問い合わせ・アクセスマップ画像。新しく画像を作る場合は、imgフォルダ内のbtn_base_画像をご利用ください。</p>
+-->
+			</div>
+		</div>
+		<!-- #main 本文スペース -->
+		<div id="main">
+			<div id="breadNavi"> <a href="index.htm">HOME</a>　&gt;&gt;　<a href="index.htm">お知らせ 一覧</a>　&gt;&gt;　現在のページ </div>
+			<h1>アカウント管理(STEP1)</h1>
+			<div class="contentswrap">
+				<div id="id1">
+					<h2>アカウント管理(STEP1)</h2>
+					<div class="fakelist" align="left">
+						<a href="#" onclick="document.getElementById('id1').style.display = 'none';
+											 document.getElementById('id2').style.display = 'block';
+											 document.getElementById('id3').style.display = 'none';
+											">アカウント追加</a>
+						&nbsp;<a href="#">アカウント削除</a>
+					</div>
+					<div class="fakeContainer">
+						<table id="demoTable">
+							<tr>
+								<th><input type="checkbox"></th>
+								<th>アカウント名</th>
+								<th>ステータス</th>
+								<th><font size="1">キャッシュポイント(CP)<br>トレードポイント(TP)</th>
+								<th>メールアドレス</th>
+								<th>備考</th>
+								<th>追加タグA</th>
+								<th>追加タグB</th>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>
+									<a href="#" onclick="document.getElementById('id1').style.display = 'none';
+														 document.getElementById('id2').style.display = 'block';
+														 document.getElementById('id3').style.display = 'none';
+														">山田　太郎</a>
+								</td>
+								<td>アカウント（個人：公開）</td>
+								<td>CP:1200pt<br>TP:900pt</td>
+								<td>yamada@test.jp</td>
+								<td>ログイン時のアカウントです。</td>
+								<td>追加タグAの内容</td>
+								<td>追加タグBの内容</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>
+									<a href="#" onclick="document.getElementById('id1').style.display = 'none';
+														 document.getElementById('id2').style.display = 'block';
+														 document.getElementById('id3').style.display = 'none';
+														">山田倉庫</a>
+								</td>
+								<td>通常アカウント<br>（倉庫業者：公開）</td>
+								<td>CP:0pt<br>TP:0pt</td>
+								<td>yamada_WH@test.jp</td>
+								<td>倉庫業者のアカウントです。</td>
+								<td>追加タグAの内容</td>
+								<td>追加タグBの内容</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>
+									<a href="#" onclick="document.getElementById('id1').style.display = 'none';
+														 document.getElementById('id2').style.display = 'block';
+														 document.getElementById('id3').style.display = 'none';
+														">山田運輸</a>
+								</td>
+								<td>通常アカウント<br>（運送業者：公開）</td>
+								<td>CP:0pt<br>TP:0pt</td>
+								<td>yamada_TP@test.jp</td>
+								<td>運送業者のアカウントです。</td>
+								<td>追加タグAの内容</td>
+								<td>追加タグBの内容</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>
+									<a href="#" onclick="document.getElementById('id1').style.display = 'none';
+														 document.getElementById('id2').style.display = 'block';
+														 document.getElementById('id3').style.display = 'none';
+														">連携システムA</a>
+								</td>
+								<td>通常アカウント<br>（連携システム：非公開）</td>
+								<td>CP:0pt<br>TP:0pt</td>
+								<td>yamada_SA@test.jp</td>
+								<td>連携システムのアカウントです。</td>
+								<td>追加タグAの内容</td>
+								<td>追加タグBの内容</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>
+									<a href="#" onclick="document.getElementById('id1').style.display = 'none';
+														 document.getElementById('id2').style.display = 'block';
+														 document.getElementById('id3').style.display = 'none';
+														">連携システムB</a>
+								</td>
+								<td>通常アカウント<br>（連携システム：非公開）</td>
+								<td>CP:0pt<br>TP:0pt</td>
+								<td>yamada_SB@test.jp</td>
+								<td>連携システムのアカウントです。</td>
+								<td>追加タグAの内容</td>
+								<td>追加タグBの内容</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="id2">
+					<h2>アカウント詳細</h2>
+					<div class="fakelist" align="left">
+						<a href="#" onclick="document.getElementById('id1').style.display = 'none';
+											 document.getElementById('id2').style.display = 'none';
+											 document.getElementById('id3').style.display = 'block';
+											">アカウント編集</a>
+					</div>
+					<table class="table">
+						<tr>
+							<td class="tb">アカウント情報：test</td>
+							<td>山田　太郎<br>（個人/男/オーナーアカウント/公開）</td>
+						</tr>
+						<tr>
+							<td class="tb">キャッシュポイント(CP)<br>トレードポイント(TP)</td>
+							<td>CP:1200pt<br>TP:900pt</td>
+						</tr>
+						<tr>
+							<td class="tb">生年月日/メールアドレス</td>
+							<td>西暦1978年1月1日<br>yamada@test.jp</td>
+						</tr>
+						<tr>
+							<td class="tb">電話番号（固定/携帯）</td>
+							<td>03-1111-2222<br>090-1111-2222</td>
+						</tr>
+						<tr>
+							<td class="tb">備考</td>
+							<td>ログイン時のアカウントです。</td>
+						</tr>
+						<tr>
+							<td class="tb">追加タグA</td>
+							<td>追加タグAの内容</td>
+						</tr>
+						<tr>
+							<td class="tb">追加タグB</td>
+							<td>追加タグBの内容</td>
+						</tr>
+					</table>
+				</div>
+				<div id="id3">
+					<h2>アカウント登録変更</h2>
+					<div class="fakelist" align="left">
+						<a href="#">アカウント登録変更</a>
+					</div>
+					<table class="table">
+						<tr>
+							<td class="tb">アカウントID<br><font size="1" color="blue">一度登録すると変更はできません</font></td>
+							<td>
+								<input type="text" />
+								<input type="checkbox" /><font size="1" color="blue">オーナーアカウント</font>
+							</td>
+						</tr>
+						<tr>
+							<td class="tb">アカウント種別</td>
+							<td>
+								<select name="kamoku2" size="1">
+									<option value="個人" selected="selected">個人</option>
+									<option value="法人">法人</option>
+									<option value="倉庫業者">倉庫業者</option>
+									<option value="運送業者">運送業者</option>
+									<option value="連携システム">連携システム</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="tb">アカウント名（漢字）<br><font size="1" color="blue">※姓と名の間は1文字開けてください</font></td>
+							<td><input type="text" /></td>
+						</tr>
+						<tr>
+							<td class="tb">アカウント名（かな）<br><font size="1" color="blue">※姓と名の間は1文字開けてください</font></td>
+							<td><input type="text" /></td>
+						</tr>
+						<tr>
+							<td class="tb">アカウント名（ニックネーム）<br></td>
+							<td><input type="text" /></td>
+						</tr>
+						<tr>
+							<td class="tb">メールアドレス</td>
+							<td><input type="text" /></td>
+						</tr>
+						<tr>
+							<td class="tb">メールアドレス（確認用）</td>
+							<td><input type="text" /></td>
+						</tr>
+						<tr>
+							<td class="tb">パスワード</td>
+							<td><input type="password" /></td>
+						</tr>
+						<tr>
+							<td class="tb">パスワード（確認用）</td>
+							<td><input type="password" /></td>
+						</tr>
+						<tr>
+							<td class="tb">性別</td>
+							<td>
+								<select name="kamoku3" size="1">
+									<option value="未指定" selected="selected">未指定</option>
+									<option value="男">男</option>
+									<option value="女">女</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="tb">生年月日</td>
+							<td>西暦<input type="text" size=4 />年<input type="text" size=2 />月<input type="text" size=2 />日</td>
+						</tr>
+						<tr>
+							<td class="tb">電話番号（固定）</td>
+							<td><input type="text" /></td>
+						</tr>
+						<tr>
+							<td class="tb">電話番号（携帯）</td>
+							<td><input type="text" /></td>
+						</tr>
+						<tr>
+							<td class="tb">備考</td>
+							<td><textarea></textarea></td>
+						</tr>
+						<tr>
+							<td class="tb">追加タグA</td>
+							<td><textarea></textarea></td>
+						</tr>
+						<tr>
+							<td class="tb">追加タグB</td>
+							<td><textarea></textarea></td>
+						</tr>
+					</table>
+				</div>
+				<div id="subnavi"> </div>
+			</div>
+		</div>
+		<hr>
+
+	</div>
+	<!-- #footer　フッタースペース -->
+	<div id="footer">
+		<p>Copyright (c) 20XX yourname</p>
+	</div>
+	<div id="templatelink"> HTML &amp; CSS template by <a href="http://www.shoshinsha.com/hp/template/">CSSデザインテンプレート</a> </div>
+
+</div>
+
+
+
+<div id="testDiv" style="display:none;float:left;margin:40px;width:400px;height:300px;background-color:#f1f1f1;"></div>
+
+<script type="text/javascript" src="../javascripts/superTables.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+
+(function () {
+    new superTable("demoTable", {
+    	cssSkin : "sSky",
+        fixedCols : 2
+    });
+    new superTable("demoTable2", {
+    	cssSkin : "sSky",
+        fixedCols : 2
+    });
+})();
+
+//]]>
+</script>
+</body>
+</html>

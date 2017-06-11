@@ -1,0 +1,292 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<title>マテリアルコックピット</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link href="../stylesheets/stylet.css" rel="stylesheet" type="text/css">
+<link href="../stylesheets/superTables.css" rel="Stylesheet" type="text/css" />
+</head>
+<body>
+<!-- #page ページの整形：中央寄せとか -->
+<div id="page">
+	<!-- #headerer 画面上部のヘッド部分 -->
+	<div id="header">
+		<div id="header_title">マテリアルコックピット
+<!-- <img src="./img/title.gif" width="240" height="35" alt="マテリアルコックピット>--> </div>
+		<div id="headerinfo">山田　太郎<br>450000pt</div>
+		<div id="headerimg"></div>
+
+	</div>
+
+	<!-- #menu トップメニュー -->
+	<div id="menu">
+		<ul class="menu_f01">
+			<li><a href="../index.htm">Home</a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="../login.htm">ログアウト</a></li>
+		</ul>
+	</div>
+	<div id="contents">
+		<div id="menuL">
+			<!-- #menuL 左サイドメニュー -->
+			<div class="subinfo">
+				<p class="image"></p>
+			</div>
+			<div class="subinfo">
+				<p class="label">メニュー</p>
+				<ul>
+					<li><a href="../index.htm">お知らせ/タイムライン（STEP1）</a></li>
+					<li><a href="../AccountSearch/AccountSearch.htm">アカウント/組織照会（STEP1）</a></li>
+					<li><a href="../AccountManagement/AccountManagement.htm">アカウント管理（STEP1）</a></li>
+					<li><a href="../AccountManagement/StructureManagement.htm">組織管理（STEP1）</a></li>
+					<li><a href="../PointExchange/PointExchange.htm">取引管理（STEP1）</a></li>
+					<li><a href="../LocationManagement/LocationManagement.htm">ロケーション/ボックス管理（STEP1）-修正中</a></li>
+					<li><a href="../MaterialManagement/MaterialManagement.htm">マテリアル管理（STEP1）-修正中</a></li>
+					<li><a href="../MaterialCockpit/MaterialCockpit.htm">マテリアルコックピット（STEP1）-修正中</a></li>
+				</ul>
+			</div>
+			<div class="menuInfo">
+				<p class="label">結果報告</p>
+				<div id="newsbox">
+					<dl>
+						<dt>2008/06/13</dt>
+						<dd class="link"><a href="./news/080529.htm">XXの決済が終了しました。</a></dd>
+						<dd class="link"><a href="./news/080529.htm">入金が完了しました。</a></dd>
+						<dd class="link"><a href="./news/080529.htm">新規でロケーションを登録しました。</a></dd>
+					</dl>
+					<ul class="toInfo">
+						<li><a href="./news/index.htm">過去の結果報告</a></li>
+					</ul>
+				</div>
+				<p class="label">運営からのお知らせ</p>
+				<p></p>
+				<div id="newsbox">
+					<dl>
+						<dt>2008/06/13</dt>
+						<dd class="link"><a href="./news/080529.htm">サーバメンテナンスのお知らせ。</a></dd>
+						<dd class="link"><a href="./news/080529.htm">サーバメンテナンスのお知らせ。</a></dd>
+						<dd class="link"><a href="./news/080529.htm">サーバメンテナンスのお知らせ。</a></dd>
+					</dl>
+					<ul class="toInfo">
+						<li><a href="./news/index.htm">過去のお知らせ</a></li>
+					</ul>
+				</div>
+<!--				<div class="banner"><img src="img/btn_toiawase.png" alt="お問い合わせ" width="220" height="50"></div>
+				<div class="banner"><img src="img/btn_map.png" alt="アクセスマップ" width="220" height="50"></div>
+				<p>▲問い合わせ・アクセスマップ画像。新しく画像を作る場合は、imgフォルダ内のbtn_base_画像をご利用ください。</p>
+-->
+			</div>
+		</div>
+		<!-- #main 本文スペース -->
+		<div id="main">
+			<div id="breadNavi"> <a href="index.htm">HOME</a>　&gt;&gt;　<a href="index.htm">お知らせ 一覧</a>　&gt;&gt;　現在のページ </div>
+			<h1>マテリアルコックピット</h1>
+			<table class="table">
+				<tr>
+					<td class="tb">
+						ロケーション
+					</td>
+					<td>
+						<input type="text" />
+					</td>
+					<td rowspan="3">
+						<input type="submit" value="照会" />
+					</td>
+				</tr>
+				<tr>
+					<td class="tb">
+						ボックス
+					</td>
+					<td>
+						<input type="text" />
+					</td>
+				</tr>
+				<tr>
+					<td class="tb">
+						マテリアル
+					</td>
+					<td>
+						<input type="text" />
+					</td>
+				</tr>
+			</table>
+			<div class="contentswrap">
+				<h2>ロケーション名：ロケーションＡ（ID:XXXXXXX1/公開）</h2>
+				ボックス名：ボックスＳ（ID:CCCCCCCC1/公開）
+				<div class="fakelist" align="left">
+					<a href="#">新規追加（自分の所有しているロケーションのみ）</a>
+					&nbsp;<a href="#">移動/破棄</a>
+				</div>
+				<div class="fakeContainer">
+					<table id="demoTable">
+						<tr>
+							<th><input type="checkbox"></th>
+							<th>マテリアル名</th>
+							<th>ステータス</th>
+							<th>提供価値<br>保持料</th>
+							<th>保証料<br>（提供側/利用側）</th>
+							<th><a href="#">追加タグA</a></th>
+							<th><a href="#">追加タグB</b></th>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>
+								あしながおじさんA<br>
+								（本/ISBN：XXXXX1）
+							</td>
+							<td>配置済（公開）/提供可能</td>
+							<td>CP:100pt<br>CP:100pt/月</td>
+							<td>CP:100pt<br>CP:100pt</td>
+							<td>追加タグA</td>
+							<td><input type="button" value="PDF取込"></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>
+								あしながおじさんB<br>
+								（本/ISBN：XXXXX1）
+							</td>
+							<td>配置済（公開）/提供可能</td>
+							<td>CP:100pt<br>CP:100pt/月</td>
+							<td>CP:100pt<br>CP:100pt</td>
+							<td><input type="button" value="コンタクト"></td>
+							<td><input type="button" value="PDF取込"></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>
+								あしながおじさんC<br>
+								（本/ISBN：XXXXX1）
+							</td>
+							<td>配置済（公開）/提供可能</td>
+							<td>CP:100pt<br>CP:100pt/月</td>
+							<td>CP:100pt<br>CP:100pt</td>
+							<td><input type="button" value="コンタクト"></td>
+							<td><input type="button" value="PDF取込"></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>
+								あしながおじさんD<br>
+								（本/ISBN：XXXXX1）
+							</td>
+							<td>配置済（公開）/提供可能</td>
+							<td>CP:100pt<br>CP:100pt/月</td>
+							<td>CP:100pt<br>CP:100pt</td>
+							<td><input type="button" value="コンタクト"></td>
+							<td><input type="button" value="PDF取込"></td>
+						</tr>
+					</table>
+				</div>
+				ボックス名：ボックスＳ2（ID:CCCCCCCC1/非公開）
+				<div class="fakelist" align="left">
+					<a href="#">新規追加（自分の所有しているロケーションのみ）</a>
+					&nbsp;<a href="#">移動/削除</a>
+					&nbsp;<a href="#">タグ追加</a>
+				</div>
+				<div class="fakeContainer">
+					<table id="demoTable2">
+						<tr>
+							<th><input type="checkbox"></th>
+							<th>マテリアル名</th>
+							<th>ステータス</th>
+							<th>提供価値<br>保持コスト</th>
+							<th>保持供託ポイント<br>（提供側/利用側）</th>
+							<th><a href="#">追加タグA</a></th>
+							<th><a href="#">追加タグB</b></th>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>
+								不思議の国のアリスA<br>
+								（本/ISBN：XXXXX1）
+							</td>
+							<td>配置済（非公開）/提供不可</td>
+							<td>CP:100pt<br>CP:100pt/月</td>
+							<td>CP:100pt<br>CP:100pt</td>
+							<td><input type="button" value="コンタクト"></td>
+							<td><input type="button" value="PDF取込"></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>
+								不思議の国のアリスB<br>
+								（本/ISBN：XXXXX1）
+							</td>
+							<td>配置済（非公開）/提供不可</td>
+							<td>CP:100pt<br>CP:100pt/月</td>
+							<td>CP:100pt<br>CP:100pt</td>
+							<td><input type="button" value="コンタクト"></td>
+							<td><input type="button" value="PDF取込"></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>
+								不思議の国のアリスC<br>
+								（本/ISBN：XXXXX1）
+							</td>
+							<td>配置済（非公開）/提供不可</td>
+							<td>CP:100pt<br>CP:100pt/月</td>
+							<td>CP:100pt<br>CP:100pt</td>
+							<td><input type="button" value="コンタクト"></td>
+							<td><input type="button" value="PDF取込"></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td>
+								不思議の国のアリスD<br>
+								（本/ISBN：XXXXX1）
+							</td>
+							<td>配置済（非公開）/提供不可</td>
+							<td>CP:100pt<br>CP:100pt/月</td>
+							<td>CP:100pt<br>CP:100pt</td>
+							<td><input type="button" value="コンタクト"></td>
+							<td><input type="button" value="PDF取込"></td>
+						</tr>
+					</table>
+				</div>
+
+				<div id="subnavi"> </div>
+			</div>
+		</div>
+		<hr>
+
+	</div>
+	<!-- #footer　フッタースペース -->
+	<div id="footer">
+		<p>Copyright (c) 20XX yourname</p>
+	</div>
+	<div id="templatelink"> HTML &amp; CSS template by <a href="http://www.shoshinsha.com/hp/template/">CSSデザインテンプレート</a> </div>
+
+</div>
+
+
+
+<div id="testDiv" style="display:none;float:left;margin:40px;width:400px;height:300px;background-color:#f1f1f1;"></div>
+
+<script type="text/javascript" src="../javascripts/superTables.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+
+(function () {
+    new superTable("demoTable", {
+    	cssSkin : "sSky",
+        fixedCols : 2
+    });
+    new superTable("demoTable2", {
+    	cssSkin : "sSky",
+        fixedCols : 2
+    });
+})();
+
+//]]>
+</script>
+</body>
+</html>

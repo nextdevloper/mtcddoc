@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<title>マテリアルコックピット</title>
+<link href="stylesheets/loginstyle.css" media="screen, projection" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="container">
+  <div id="topnav" class="topnav"> 
+		<a href="newAccount/newAccount1.htm" class="XXXX"><span>新規登録</span></a>
+		<a href="login" class="signin"><span>ログイン（STEP1）</span></a> 
+  </div>
+  <p><strong>トップページの内容は検討中</strong></p>
+  <fieldset id="signin_menu">
+    <form method="post" id="signin" action="index.htm">
+      <label for="username">アカウント名</label>
+      <input id="username" name="username" value="" title="username" tabindex="4" type="text">
+      </p>
+      <p>
+        <label for="password">パスワード</label>
+        <input id="password" name="password" value="" title="password" tabindex="5" type="password">
+      </p>
+      <p class="remember">
+        <input id="signin_submit" value="ログイン" tabindex="6" type="submit" onclick="location.href='ReissuPassword/ReissuPassword1.htm'">
+        <input id="remember" name="remember_me" value="1" tabindex="7" type="checkbox">
+        <label for="remember">ログイン情報を保存する</label>
+      </p>
+      <!--<p class="forgot"> <a href="ReissuPassword/ReissuPassword1.htm" id="resend_password_link">Forgot your password?</a> </p>-->
+      <p class="forgot-username"> <A id=forgot_username_link title="E-MAIL宛てにパスワードの再発行を行います。" href="ReissuPassword/ReissuPassword1.htm">アカウント名/パスワードを忘れた方はこちら</A> </p>
+    </form>
+  </fieldset>
+</div>
+<script src="javascripts/jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+
+            $(".signin").click(function(e) {          
+				e.preventDefault();
+                $("fieldset#signin_menu").toggle();
+				$(".signin").toggleClass("menu-open");
+            });
+			
+			$("fieldset#signin_menu").mouseup(function() {
+				return false
+			});
+			$(document).mouseup(function(e) {
+				if($(e.target).parent("a.signin").length==0) {
+					$(".signin").removeClass("menu-open");
+					$("fieldset#signin_menu").hide();
+				}
+			});			
+			
+        });
+</script>
+<script src="javascripts/jquery.tipsy.js" type="text/javascript"></script>
+<script type='text/javascript'>
+    $(function() {
+	  $('#forgot_username_link').tipsy({gravity: 'w'});   
+    });
+  </script>
+</body>
+</html>
